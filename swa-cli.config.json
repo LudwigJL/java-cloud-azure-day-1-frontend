@@ -1,0 +1,19 @@
+{
+  "appLocation": ".",
+  "outputLocation": "dist",
+  "apiLocation": "",
+  "apiLanguage": "",
+  "apiVersion": "",
+  "dataApiLocation": "",
+  "configurations": {
+    "java-cloud-azure-day-1-frontend": {
+      "appLocation": ".",
+      "outputLocation": "dist",
+      "appBuildCommand": "npm run build",
+      "run": "npm run dev",
+      "appDevserverUrl": "http://localhost:5173",
+      "appName": "ludwigs-site",
+      "resourceGroup": "students_infrastructure"
+    }
+  }
+}

@@ -1,0 +1,155 @@
+.container {
+    background-color: white;
+
+}
+
+.title-item {
+    background-color: #0072c4;
+    height: 75px;
+}
+
+.title-item h1 {
+    padding-top: 10px;
+    background-color: #0072c4;
+    color: white;
+}
+
+.container-splitter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.penguin-container {
+    background-color: white;
+    height: 400px;
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.penguin-item {
+    display: flex;
+    padding-top: 20px;
+    align-items: start;
+    justify-content: center;
+    height: 360px;
+    background-color: white;
+
+}
+
+.penguin-item img {
+    max-height: 250px;
+    max-width: 250px;
+    border-radius: 50%;
+}
+
+.color-picker-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.swatch-green {
+    height: 40px;
+    width: 40px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    transition: transform .2s;
+
+} 
+
+.swatch-green:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.swatch-red {
+    height: 40px;
+    width: 40px;
+    background-color: #e74c3c;;
+    border-radius: 50%;
+    transition: transform .2s;
+
+} 
+
+.swatch-red:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+
+}
+
+.swatch-purple {
+    height: 40px;
+    width: 40px;
+    background-color: #9b59b6;
+    border-radius: 50%;
+    transition: transform .2s;
+
+} 
+
+.swatch-purple:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.form-item {
+    background-color: white;
+    align-items: center;
+    height: 400px;
+    width: 50%;
+    padding-top: 20px
+}
+
+.form-item-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.form-item-container input {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    
+}
+
+.form-item-container p {
+    font-size: x-large;
+    background-color: white;
+}
+
+.form-ending {
+    background-color: white;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: end;
+}
+
+.form-ending input {
+    margin-right: 100px;
+    height: 50%;
+    width: 20%;
+    background-color:#2ecc71;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform .2s;
+    color: white;
+    font-size: large;
+
+}
+
+.form-ending input:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+

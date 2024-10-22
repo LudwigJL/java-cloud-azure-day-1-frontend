@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function RoomsPage() {
-  const baseUrl = "http://localhost:5000/";
+  const baseUrl = "https://ludwigs-club-penguin-lib.azurewebsites.net/";
   const [rooms, setRooms] = useState([]);
 
   const fetchRooms = async () => {

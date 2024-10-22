@@ -17,8 +17,8 @@ export default function HomeContent() {
               Want to start waddling around and create new friends? Make sure to
               create a Penguin and log in to start your adventure!
             </p>
-            <Link to="/penguins">
-              <button className="content-button">Explore the penguins!</button>
+            <Link to="/signup">
+              <button className="content-button">Create your penguin!</button>
             </Link>
           </div>
 

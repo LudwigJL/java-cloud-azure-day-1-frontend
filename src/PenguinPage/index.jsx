@@ -4,7 +4,7 @@ import Header from "../Header";
 import PenguinList from "../PenguinList";
 
 export default function PenguinPage() {
-  const baseUrl = "http://localhost:5000/";
+  const baseUrl = "https://ludwigs-club-penguin-lib.azurewebsites.net/";
   const [penguins, setPenguins] = useState([]);
 
   const fetchAllPenguins = async () => {

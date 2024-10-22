@@ -8,8 +8,7 @@ export default function PenguinList({ penguins }) {
           <li key={index} className="profile-li">
             <div className="profile-container">
               <div className="profile-img">
-                {console.log(penguin.pictureUrl)}
-                <img src={penguin.pictureUrl} alt="penguin" />
+                <img style={{backgroundColor: penguin.favoriteColor}} src={penguin.pictureUrl} alt="penguin" />
               </div>
 
               <div className="profile-info">
