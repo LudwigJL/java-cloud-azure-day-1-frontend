@@ -23,7 +23,7 @@ export default function SignUpPage() {
 
   const changeColor = (e) => {
     setPenguinColor(e.target.value);
-    setUserData( {...userData, favoriteColor: e.target.value} )
+    setUserData({ ...userData, favoriteColor: e.target.value });
   };
 
   const handleChange = (e) => {
@@ -36,20 +36,20 @@ export default function SignUpPage() {
   };
 
   const handleSubmit = async (e) => {
-    console.log("This is the data")
+    console.log("This is the data");
     console.log(userData);
 
     e.preventDefault();
 
     await fetch(baseUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(userData),
-      });
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(userData),
+    });
 
     setUserData(initialData);
     navigate("/");
-  }
+  };
 
   return (
     <>
@@ -70,32 +70,45 @@ export default function SignUpPage() {
             </div>
 
             <div className="color-picker-container">
-              <div className="swatch-green">
-                <button
-                  onClick={changeColor}
-                  className="swatch-green"
-                  name="swatch-pick"
-                  value="#2ecc71"
-                ></button>
-              </div>
+              <button
+                onClick={changeColor}
+                style={{ backgroundColor: "#2ecc71" }}
+                className="swatch"
+                name="swatch-pick"
+                value="#2ecc71"
+              ></button>
 
-              <div className="swatch-red">
-                <button
-                  onClick={changeColor}
-                  className="swatch-red"
-                  name="swatch-pick"
-                  value={"#e74c3c"}
-                ></button>
-              </div>
+              <button
+                onClick={changeColor}
+                style={{ backgroundColor: "#e74c3c" }}
+                className="swatch"
+                name="swatch-pick"
+                value={"#e74c3c"}
+              ></button>
 
-              <div className="swatch-purple">
-                <button
-                  onClick={changeColor}
-                  className="swatch-purple"
-                  name="swatch-purple"
-                  value={"#9b59b6"}
-                ></button>
-              </div>
+              <button
+                onClick={changeColor}
+                style={{ backgroundColor: "#9b59b6" }}
+                className="swatch"
+                name="swatch-pick"
+                value={"#9b59b6"}
+              ></button>
+
+              <button
+                onClick={changeColor}
+                style={{ backgroundColor: "#ff8504" }}
+                className="swatch"
+                name="swatch-pick"
+                value={"#ff8504"}
+              ></button>
+
+              <button
+                onClick={changeColor}
+                style={{ backgroundColor: "#04fff7" }}
+                className="swatch"
+                name="swatch-pick"
+                value={"#04fff7"}
+              ></button>
 
               <div></div>
             </div>
@@ -114,7 +127,7 @@ export default function SignUpPage() {
           </div>
         </div>
         <div className="form-ending">
-          <input type="submit" value="Create!" onClick={handleSubmit}/>
+          <input type="submit" value="Create!" onClick={handleSubmit} />
         </div>
       </div>
     </>
