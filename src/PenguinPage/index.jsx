@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import "./style.css";
+
 import Header from "../Header";
 import PenguinList from "../PenguinList";
 
 export default function PenguinPage() {
-  const baseUrl = "https://ludwigs-club-penguin-lib.azurewebsites.net/";
+  const baseUrl = "http://20.162.213.120:5000/";
   const [penguins, setPenguins] = useState([]);
 
   const fetchAllPenguins = async () => {

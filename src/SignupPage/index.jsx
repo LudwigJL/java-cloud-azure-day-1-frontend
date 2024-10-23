@@ -5,7 +5,7 @@ import "./style.css";
 
 export default function SignUpPage() {
   const [penguinColor, setPenguinColor] = useState("#000000");
-  const baseUrl = "https://ludwigs-club-penguin-lib.azurewebsites.net/penguins";
+  const baseUrl = "http://20.162.213.120:5000/";
   const navigate = useNavigate();
 
   const initialData = {
